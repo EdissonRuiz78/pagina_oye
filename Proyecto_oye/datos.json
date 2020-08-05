@@ -1,58 +1,76 @@
 {
 	"canciones": [
 		{
-			"nombre": "vive",
-			"ruta": "uno.mp3",
+			"nombre": "Vive",
+			"ruta": "./canciones/uno.mp3",
 			"reproducciones": 10,
 			"icono": 4
 		},
 		{
-			"nombre": "invierno",
-			"ruta": "dos.mp3",
+			"nombre": "Invierno",
+			"ruta": "./canciones/dos.mp3",
 			"reproducciones": 30,
 			"icono": 1
 		},
 		{
-			"nombre": "planeta",
-			"ruta": "tres.mp3",
+			"nombre": "Planeta",
+			"ruta": "./canciones/tres.mp3",
 			"reproducciones": 20,
 			"icono": 3
 		},
 		{
-			"nombre": "suave",
-			"ruta": "cuatro.mp3",
+			"nombre": "Suave",
+			"ruta": "./canciones/cuatro.mp3",
 			"reproducciones": 80,
 			"icono": 2
 		},
 		{
-			"nombre": "contigo",
-			"ruta": "cinco.mp3",
+			"nombre": "Contigo",
+			"ruta": "./canciones/cinco.mp3",
 			"reproducciones": 50,
 			"icono": 4
 		},
 		{
-			"nombre": "alas",
-			"ruta": "seis.mp3",
+			"nombre": "Alas",
+			"ruta": "./canciones/seis.mp3",
 			"reproducciones": 70,
 			"icono": 1
 		},
 		{
-			"nombre": "verde",
-			"ruta": "siete.mp3",
+			"nombre": "Verde",
+			"ruta": "./canciones/siete.mp3",
 			"reproducciones": 60,
 			"icono": 3
 		},
 		{
-			"nombre": "nuevamente",
-			"ruta": "ocho.mp3",
+			"nombre": "Nuevamente",
+			"ruta": "./canciones/ocho.mp3",
 			"reproducciones": 90,
 			"icono": 1
 		},
 		{
-			"nombre": "hoy",
-			"ruta": "nueve.mp3",
+			"nombre": "Hoy",
+			"ruta": "./canciones/nueve.mp3",
 			"reproducciones": 40,
 			"icono": 2
+		},
+		{
+			"nombre": "Rockstar",
+			"ruta": "./canciones/rockstar.mp3",
+			"reproducciones": 150,
+			"icono": 3
+		},
+		{
+			"nombre": "Party Girl",
+			"ruta": "./canciones/partygirl.mp3",
+			"reproducciones": 140,
+			"icono": 2
+		},
+		{
+			"nombre": "The Box",
+			"ruta": "./canciones/thebox.mp3",
+			"reproducciones": 101,
+			"icono": 1
 		}
 	]
 }

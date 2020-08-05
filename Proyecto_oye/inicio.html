@@ -9,13 +9,13 @@
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	
 	  <!-- Estilos personalizados CSS-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
     <!-- Fuentes personalizadas google-fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Domine:wght@400;700&display=swap" rel="stylesheet">
 
 	<title>Oye, donde la mùsica vive</title>
-	<link rel="icon" href="../img/icon_1.ico">
+	<link rel="icon" href="./img/icon_1.ico">
 
   </head>
 
@@ -23,19 +23,19 @@
 
 		<!--Barra de navegacion-->
 		<nav class="navbar navbar-expand-lg navbar-light">	
-			<img src="../img/logo2.png" class="img-responsive img-fluid img-circle" height="50px" width="50px">
-			<a class="navbar-brand mr-auto ml-2" href="../inicio.html" id="oye">OYE</a>
+			<img src="./img/logo2.png" class="img-responsive img-fluid img-circle" height="50px" width="50px">
+			<a class="navbar-brand mr-auto ml-2" href="./inicio.html" id="oye">OYE</a>
 			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
 			</button>
 		
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mx-auto">
-					<li class="nav-item">
-						<a class="nav-link p-0 m-1" href="../inicio.html">Inicio</a>
-					</li>
 					<li class="nav-item active">
-						<a class="nav-link p-0 m-1" href="./canciones.html">Canciones</a>
+						<a class="nav-link p-0 m-1" href="./inicio.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-0 m-1" href="./html/canciones.html">Canciones</a>
 					</li>
 				</ul>
 
@@ -51,7 +51,7 @@
 								<div class="modal-content">
 			
 									<div class="modal-header mx-auto">
-										<img src="../img/logo2.png" height="50px" width="50px">
+										<img src="./img/logo2.png" height="50px" width="50px">
 										<h4 class="modal-title ml-2">Contàctanos</h4>												
 										<button type="button" class="close" data-dismiss="modal">
 										<span aria-hidden="true">&times;</span></button>
@@ -89,44 +89,97 @@
 		<div class="contenedor">
 				
 				<!--Header principal-->
-				<div>
-					<div class="row justify-content-md-center">
-						<div class="col-12 col-md-8">
-							<h1 class="text-center">Canciones</h1>
-							<input type="text" class="form-control text-center" id="busqueda" placeholder="Buscar">		
+				<header>
+					<div class="container mt-5">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<h1 class="mt-2">Canciones gratis para la comunidad!</h1>
+								<p class="lead mt-2">En este sitio podras escuchar tu mùsica preferida de manera libre...</p>
+								<a class="btn btn-dark mt-4 mb-4" href="./html/canciones.html" role="button">Ver canciones</a>
+								<a class="btn btn-dark mt-4 mb-4" href="#top3" role="button">Ver Top 3</a>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="carousel slide" id="carrusel">
+									<ol class="carousel-indicators">
+										<li data-tarjet="#carrusel" data-slide-to="0"></li>
+										<li data-tarjet="#carrusel" data-slide-to="1"></li>
+										<li data-tarjet="#carrusel" data-slide-to="3"></li>
+									</ol>
+		
+									<div class="carousel-inner">
+										<div class="carousel-item active" data-interval="3000">
+											<img src="./img/portada.jpg" class="img-fluid d-block w-100">
+										</div>
+										<div class="carousel-item" data-interval="3000">
+											<img src="./img/foto2.jpg" class="img-fluid d-block w-100">
+										</div>
+										<div class="carousel-item" data-interval="3000">
+											<img src="./img/foto3.jpg" class="img-fluid d-block w-100">
+										</div>
+									</div>
+		
+									<a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+		
+									<a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true" ></span> <span class="sr-only">Next</span> </a>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</header>
+
+				<!--Listado de canciones-->
+				<section>
+					<div class="container mt-5">
+						<div class="row justify-content-md-center">
+							<div class="col-12 col-md-8">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<td class="text text-center" colspan="2"><h2>Top 3</h2></td>
+										</tr>								
+										<tr>
+											<th>Nombre</th>
+											<th class="text text-center">Canciòn</th>
+										</tr>
+									</thead>
+									<tbody id="top3">
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<!--Grid con canciones disponibles-->
-				<div>
-					<section>
+				<!--Footer - pie de pagina-->
+				<div class="container-footer">
 
-						<div class="container">		
-							<div class="search">
-								<i class="fa fa-search"></i>
-							</div>
-							
-							<ul id="grilla">	
-								
-							</ul>
-							
-						</div>		
+				<footer>
+					<div class="row justify-content-between">
+						<div class="col mr-auto" id="comparte">
+							Comparte la mùsica
+						</div>
+						<div class="col text-right" id="derechos">
+							@Derechos reservados
+						</div>
+					</div>
+				</footer>
 	
-					</section>
 				</div>
-			
+
 		</div>
 
     <!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		
 		<!--Archivo Javascrip-->
-		<script src="../js/canciones.js"></script>
+		<script src="./js/main.js"></script>
 
   </body>
 

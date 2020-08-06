@@ -77,5 +77,18 @@ function buscarCanciones() {
   });
 }
 
+window.sr = ScrollReveal();
+sr.reveal('.navbar', {
+  duration: 2000,
+  origin: 'top'
+});
+
+window.sr = ScrollReveal();
+sr.reveal('.container', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '300px'
+});
+
 cargarCanciones();
 buscarCanciones();
